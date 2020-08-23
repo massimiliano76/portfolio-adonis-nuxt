@@ -1,10 +1,10 @@
 <template>
 	<div class="navbar-bottom">
 		<NavbarBottomItem target="/" icon="icon-home-lg-alt" label="Accueil" />
-		<NavbarBottomItem target="/" icon="icon-user" label="Accueil" />
+		<NavbarBottomItem target="/" icon="icon-user" label="Portrait" />
 		<NavbarBottomItem target="/" icon="icon-pencil-ruler" label="Réalisations" />
 		<NavbarBottomItem target="/" icon="icon-comment-alt-smile" label="Contact" />
-		<NavbarBottomItem v-if="this.$auth.loggedIn" target="/" icon="icon-cog" label="Profil" />
+		<NavbarBottomItem v-if="this.$auth.loggedIn" target="/dashboard" icon="icon-cog" label="Config" />
 	</div>
 </template>
 
