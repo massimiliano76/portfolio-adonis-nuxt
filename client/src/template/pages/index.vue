@@ -1,10 +1,9 @@
 <template>
-	<div class="main">
-		<img
-			src="https://github.com/Izoxy/adonis-nuxt-template/blob/master/assets/banner.png?raw=true"
-			alt="f"
-		/>
-		<h1>{{ $t('welcome') }}</h1>
+	<div>
+		<div class="banner">
+			<img src="~public/images/background.jpg" class="banner-image" alt="banner-image" />
+			<h1>{{ $t('welcome') }}</h1>
+		</div>
 	</div>
 </template>
 
@@ -14,19 +13,20 @@ export default {
 }
 </script>
 
-<style>
-.main {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 50%;
-	margin: auto;
-}
-img {
-	width: 100%;
-}
-h1 {
-	text-align: center;
+<style lang="scss">
+.banner {
+	position: relative;
+	.banner-image {
+		width: 100vw;
+		height: calc(75vh - 70px);
+		filter: brightness(70%);
+	}
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+	}
 }
 </style>

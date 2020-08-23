@@ -1,7 +1,7 @@
 export default {
-	// Disallow: [
-	//     '/login',
-	//     '/admin'
-	// ],
+	Disallow: [
+		'/dashboard',
+		//     '/admin'
+	],
 	Sitemap: process.env.baseUrl + '/sitemap.xml',
 }
