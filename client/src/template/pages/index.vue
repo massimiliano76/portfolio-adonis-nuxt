@@ -1,6 +1,9 @@
 <template>
 	<div class="main">
-		<img src="https://github.com/Izoxy/adonis-nuxt-template/blob/master/assets/banner.png?raw=true" alt="" />
+		<img
+			src="https://github.com/Izoxy/adonis-nuxt-template/blob/master/assets/banner.png?raw=true"
+			alt="f"
+		/>
 		<h1>{{ $t('welcome') }}</h1>
 	</div>
 </template>
