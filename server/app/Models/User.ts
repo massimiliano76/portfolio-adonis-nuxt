@@ -1,6 +1,13 @@
+import Picture from 'App/Models/Picture'
 import { DateTime } from 'luxon'
 import Hash from '@ioc:Adonis/Core/Hash'
-import { column, beforeSave, BaseModel } from '@ioc:Adonis/Lucid/Orm'
+import {
+	column,
+	beforeSave,
+	BaseModel,
+	hasOne,
+	HasOne
+} from '@ioc:Adonis/Lucid/Orm'
 
 export default class User extends BaseModel {
 	@column({ isPrimary: true })
@@ -17,6 +24,9 @@ export default class User extends BaseModel {
 
 	@column()
 	public password: string
+
+	@hasOne(() => Picture)
+	public avatar: HasOne<typeof Picture>
 
 	@column()
 	public rememberMeToken?: string
