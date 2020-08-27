@@ -1,4 +1,5 @@
 export default {
 	welcome: 'Welcome to Adonis-Nuxt app !',
-	headerLangs: 'Choose your language.'
+	headerLangs: 'Choose your language.',
+	devisAction: 'Get a quote',
 }

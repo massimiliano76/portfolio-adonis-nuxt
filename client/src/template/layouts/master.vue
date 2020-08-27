@@ -20,4 +20,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+body {
+	max-width: 100vw;
+	overflow: hidden;
+	height: 100vh;
+}
+</style>
