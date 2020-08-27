@@ -27,18 +27,23 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae aut error fugit natus esse excepturi, officia vero facilis quasi quisquam animi dicta eaque voluptas, illum nesciunt pariatur veniam neque.</p>
 			</div>
 		</section>
+		<section class="pt-4">
+			<offers />
+		</section>
 	</div>
 </template>
 
 <script>
 import iconRoundedVue from '../../components/icon-rounded.vue'
 import ValuesSectionVue from '../../components/ValuesSection.vue'
+import OffersVue from '../../components/Offers.vue'
 
 export default {
 	layout: 'master',
 	components: {
 		icon: iconRoundedVue,
 		values: ValuesSectionVue,
+		offers: OffersVue,
 	},
 	data() {
 		return {
@@ -54,6 +59,7 @@ export default {
 
 <style lang="scss">
 .index {
+	min-height: 100vh;
 	margin-bottom: 100px;
 	.banner {
 		position: relative;
