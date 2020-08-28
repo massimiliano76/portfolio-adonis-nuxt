@@ -1,9 +1,11 @@
-export default {
-	welcome: "Bienvenue dans l'application Adonis-Nuxt !",
-	headerLangs: 'Choisissez votre langue.',
-	devisAction: 'Obtenez un devis',
-	technologiesMainerLabel: 'Technologies',
-	tassesTeaLabel: 'Tasses de thé',
-	projetsEndedLabel: 'Projets terminés',
-	codeLineLabel: 'Lignes de code',
+import axios from 'axios'
+
+export default async function () {
+	let informations = {}
+	const { data } = await axios.get('http://localhost:3333/api/translations')
+	data.translations.map((item: any) => {
+		const { translation_code, fr } = item
+		informations = { ...informations, [translation_code]: fr }
+	})
+	return informations
 }

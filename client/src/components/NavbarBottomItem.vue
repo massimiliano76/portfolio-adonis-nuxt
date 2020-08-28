@@ -2,7 +2,7 @@
 	<nuxt-link :to="target" class="navbar-bottom-item">
 		<div class="item-container">
 			<i :class="icon"></i>
-			<div class="text">{{ label }}</div>
+			<div class="text">{{ $t(label) }}</div>
 		</div>
 	</nuxt-link>
 </template>
