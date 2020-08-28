@@ -26,12 +26,16 @@ export default {
 	.card {
 		display: flex;
 		padding: 20px 10px;
+		text-align: center;
+		@media screen and (min-width: 576px) {
+			padding: 40px 30px;
+			font-size: 1.2rem;
+		}
 		i {
 			align-self: center;
 			font-size: 50px;
 			color: #007bff;
 		}
-		text-align: center;
 	}
 }
 </style>

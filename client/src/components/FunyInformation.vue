@@ -32,6 +32,11 @@ export default {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	@media screen and (min-width: 576px) {
+		display: inline-flex;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
 	.values {
 		align-items: stretch;
 		width: 50%;

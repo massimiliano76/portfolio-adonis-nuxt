@@ -27,17 +27,29 @@ export default {
 		display: flex;
 		padding: 20px 10px;
 		text-align: center;
+		@media screen and (min-width: 576px) {
+			padding: 40px 10px;
+		}
 		i {
 			align-self: center;
 			font-size: 50px;
 			color: #007bff;
+			@media screen and (min-width: 576px) {
+				font-size: 50px;
+			}
 		}
 		.card-body {
 			padding-top: 0;
+			@media screen and (min-width: 576px) {
+				font-size: 24px;
+			}
 			.counter {
 				font-weight: 700;
-				font-size: 30px;
+				font-size: 40px;
 				color: #1e202a;
+				@media screen and (min-width: 576px) {
+					font-size: 45px;
+				}
 			}
 		}
 	}

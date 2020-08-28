@@ -6,22 +6,24 @@
 				<h1>Baptiste Parmantier</h1>
 				<p>Développeur web freelance</p>
 			</div>
-			<div class="icons">
+			<div class="icons show-only-sm">
 				<icon icon="icon-shield-check" color="#007bff" backgroundColor="white" :shadows="true"></icon>
 				<icon icon="icon-sliders-h" color="#007bff" backgroundColor="white" :shadows="true"></icon>
 				<icon icon="icon-code" color="#007bff" backgroundColor="white" :shadows="true"></icon>
 			</div>
 		</div>
-		<section class="pt-5">
-			<div class="container pb-4 text-center">
+		<section class="attach-section pt-4">
+			<div class="container py-5 text-center">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dignissimos. Molestiae, nisi voluptas pariatur distinctio autem dolor porro aperiam, nobis, nemo deleniti maxime rem dolores excepturi iste odio eaque alias.</p>
-				<div class="btn btn-primary">{{ $t('devisAction') }}</div>
+				<div class="btn btn-primary btn-lg">{{ $t('devisAction') }}</div>
 			</div>
+		</section>
+		<section class="values-section pt-4">
 			<values icon="icon-shield-check" :text="values.first" />
 			<values icon="icon-sliders-h" :text="values.second" />
 			<values icon="icon-code" :text="values.third" />
 		</section>
-		<section class="pt-4">
+		<section class="show-section pt-4">
 			<div class="container">
 				<h2>Lorem ipsum dolor sit amet.</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae aut error fugit natus esse excepturi, officia vero facilis quasi quisquam animi dicta eaque voluptas, illum nesciunt pariatur veniam neque.</p>
@@ -65,17 +67,22 @@ export default {
 <style lang="scss">
 .index {
 	min-height: 100vh;
-	margin-bottom: 100px;
+	margin-bottom: 81.19px;
+	@media screen and (min-width: 576px) {
+		margin: 0;
+	}
 	.banner {
 		position: relative;
+		width: 100%;
 		.banner-image {
-			width: 100vw;
+			width: 100%;
 			filter: brightness(70%);
 			border-bottom-left-radius: 50px;
 			border-bottom-right-radius: 50px;
 			@media screen and (min-width: 576px) {
-				border-radius: initial;
 				height: calc(75vh - 70px);
+				border-bottom-left-radius: 150px;
+				border-bottom-right-radius: 150px;
 			}
 		}
 		.text-header {
@@ -96,6 +103,35 @@ export default {
 			.icon {
 				margin: 0 10px;
 			}
+		}
+	}
+	.attach-section {
+		padding: 5rem 0;
+		p {
+			@media screen and (min-width: 576px) {
+				font-size: 20px;
+			}
+		}
+	}
+	.values-section {
+		@media screen and (min-width: 576px) {
+			display: inline-flex;
+			justify-content: center;
+			padding: 8rem 0;
+		}
+		.values {
+			@media screen and (min-width: 576px) {
+				width: 20%;
+			}
+		}
+	}
+	.show-section {
+		padding: 5rem 0;
+		h2 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 1.5rem;
 		}
 	}
 }

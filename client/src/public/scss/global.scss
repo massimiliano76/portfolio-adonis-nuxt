@@ -60,3 +60,9 @@ h6 {
         }
     }
 }
+
+.show-only-sm {
+    @media screen and (min-width: 576px) {
+        display: none !important;
+    }
+}
