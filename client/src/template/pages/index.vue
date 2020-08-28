@@ -106,7 +106,9 @@ export default {
 		}
 	}
 	.attach-section {
-		padding: 5rem 0;
+		@media screen and (min-width: 576px) {
+			padding: 5rem 0;
+		}
 		p {
 			@media screen and (min-width: 576px) {
 				font-size: 20px;
@@ -126,12 +128,14 @@ export default {
 		}
 	}
 	.show-section {
-		padding: 5rem 0;
-		h2 {
-			font-size: 3rem;
-		}
-		p {
-			font-size: 1.5rem;
+		@media screen and (min-width: 576px) {
+			padding: 5rem 0;
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
