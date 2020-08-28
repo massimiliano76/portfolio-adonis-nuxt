@@ -29,3 +29,34 @@ h6 {
         border-bottom: 12px solid #007bff77;
     }
 }
+
+.page {
+    &-enter {
+        opacity: 0;
+
+        &-active {
+            transition-property: opacity;
+            transition-timing-function: ease-in-out;
+            transition-duration: 100ms;
+        }
+
+        &-to {
+            transform: rotate3d(0, 1, 0, 0);
+        }
+    }
+
+
+    &-leave {
+        opacity: 0;
+
+        &-active {
+            transition-property: opacity;
+            transition-timing-function: ease-in-out;
+            transition-duration: 100ms;
+        }
+
+        &-to {
+            opacity: 0;
+        }
+    }
+}

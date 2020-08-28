@@ -91,6 +91,15 @@ export default {
 	 */
 	css: ['material-icons/iconfont/material-icons.scss', '~public/scss/global.scss', '~public/icons/style.css'],
 
+	/**
+	 ** Transition between pages
+	 ** See https://fr.nuxtjs.org/api/configuration-transition/
+	 */
+	pageTransition: {
+		name: 'default',
+		mode: '',
+	},
+
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins

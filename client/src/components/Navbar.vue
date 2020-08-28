@@ -7,7 +7,9 @@
 
 		<b-collapse id="nav-collapse" is-nav>
 			<b-navbar-nav>
-				<b-nav-item href="#">Accueil</b-nav-item>
+				<b-nav-item>
+					<nuxt-link to="/">Accueil</nuxt-link>
+				</b-nav-item>
 			</b-navbar-nav>
 
 			<b-navbar-nav class="ml-auto">
@@ -19,7 +21,7 @@
 					<b-dropdown-item href="#">Mon profil</b-dropdown-item>
 					<b-dropdown-item @click="handleLogout">Se déconnecter</b-dropdown-item>
 				</b-nav-item-dropdown>
-				<b-button v-else @click.prevent="toggleModal" right>Connexion</b-button>
+				<nuxt-link v-else to="/authentication/login" right>Connexion</nuxt-link>
 			</b-navbar-nav>
 		</b-collapse>
 	</b-navbar>
