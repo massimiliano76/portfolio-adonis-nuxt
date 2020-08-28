@@ -9,9 +9,15 @@ img {
     object-fit: cover;
 }
 
-h2 {
+h2,
+h2,
+h3,
+h4,
+h5,
+h6 {
     width: fit-content;
     position: relative;
+    color: #1E202A;
 
     &:before {
         content: '';
@@ -21,6 +27,5 @@ h2 {
         left: -2px;
         width: 20%;
         border-bottom: 12px solid #007bff77;
-
     }
 }

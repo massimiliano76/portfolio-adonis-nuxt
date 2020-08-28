@@ -30,6 +30,9 @@
 		<section class="pt-4">
 			<offers />
 		</section>
+		<section class="pt-4">
+			<funny-information></funny-information>
+		</section>
 	</div>
 </template>
 
@@ -37,6 +40,7 @@
 import iconRoundedVue from '../../components/icon-rounded.vue'
 import ValuesSectionVue from '../../components/ValuesSection.vue'
 import OffersVue from '../../components/Offers.vue'
+import FunyInformationVue from '../../components/FunyInformation.vue'
 
 export default {
 	layout: 'master',
@@ -44,6 +48,7 @@ export default {
 		icon: iconRoundedVue,
 		values: ValuesSectionVue,
 		offers: OffersVue,
+		'funny-information': FunyInformationVue,
 	},
 	data() {
 		return {
