@@ -23,7 +23,8 @@ export default {
 <style lang="scss" scoped>
 body {
 	max-width: 100vw;
-	overflow: hidden;
+	width: 100vw;
+	overflow-x: hidden;
 	height: 100vh;
 }
 </style>

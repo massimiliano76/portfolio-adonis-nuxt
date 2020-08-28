@@ -1,8 +1,8 @@
 <template>
 	<div class="navbar-bottom">
 		<NavbarBottomItem target="/" icon="icon-home-lg-alt" label="homeLabel" />
-		<NavbarBottomItem target="/" icon="icon-user" label="meLabel" />
-		<NavbarBottomItem target="/" icon="icon-pencil-ruler" label="achievementLabel" />
+		<NavbarBottomItem target="/about-me" icon="icon-user" label="meLabel" />
+		<NavbarBottomItem target="/achievements/1" icon="icon-pencil-ruler" label="achievementLabel" />
 		<NavbarBottomItem target="/" icon="icon-comment-alt-smile" label="contactLabel" />
 		<NavbarBottomItem
 			v-if="this.$auth.loggedIn"
