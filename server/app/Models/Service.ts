@@ -2,16 +2,14 @@ import Frequency from 'App/Models/Frequency'
 import Detail from 'App/Models/Detail'
 import { DateTime } from 'luxon'
 import { BaseModel, column, hasMany, HasMany, belongsTo, BelongsTo } from '@ioc:Adonis/Lucid/Orm'
+import Translation from 'App/Models/Translation'
 
 export default class Service extends BaseModel {
 	@column({ isPrimary: true })
 	public id: number
 
 	@column()
-	public label: string
-
-	@column()
-	public description: string
+	public translationId: number
 
 	@column()
 	public isVisible: boolean
@@ -27,6 +25,9 @@ export default class Service extends BaseModel {
 
 	@belongsTo(() => Frequency)
 	public frequency: BelongsTo<typeof Frequency>
+
+	@belongsTo(() => Translation)
+	public label: BelongsTo<typeof Translation>
 
 	@column.dateTime({ autoCreate: true })
 	public createdAt: DateTime

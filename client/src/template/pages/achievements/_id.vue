@@ -41,7 +41,7 @@ export default {
 		background-color: #1e202a;
 		border-top-left-radius: 50px;
 		border-top-right-radius: 50px;
-		min-height: calc(65vh);
+		min-height: calc(60vh);
 		img {
 			position: absolute;
 			top: 0;
