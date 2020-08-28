@@ -3,7 +3,6 @@
 		<b-navbar-brand href="#">
 			<img src="~public/images/logo.svg" style="height: 50px" alt="Logo Leadcode" />
 		</b-navbar-brand>
-		<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
 		<b-collapse id="nav-collapse" is-nav>
 			<b-navbar-nav>

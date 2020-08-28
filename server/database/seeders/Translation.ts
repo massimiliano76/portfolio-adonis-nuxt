@@ -34,6 +34,31 @@ export default class TranslationSeeder extends BaseSeeder {
 				translationCode: 'codeLineLabel',
 				fr: 'Lignes de code',
 				en: 'Lines of code '
+			},
+			{
+				translationCode: 'homeLabel',
+				fr: 'Accueil',
+				en: 'Home'
+			},
+			{
+				translationCode: 'meLabel',
+				fr: 'Portrait',
+				en: 'Portrait'
+			},
+			{
+				translationCode: 'achievementLabel',
+				fr: 'Réalisations',
+				en: 'Achievements'
+			},
+			{
+				translationCode: 'contactLabel',
+				fr: 'Contact',
+				en: 'Contact'
+			},
+			{
+				translationCode: 'configLabel',
+				fr: 'Config',
+				en: 'Config'
 			}
 		])
 
