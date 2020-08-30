@@ -18,7 +18,7 @@
 				<div class="btn btn-primary btn-lg">{{ $t('devisAction') }}</div>
 			</div>
 		</section>
-		<section class="values-section pt-4">
+		<section class="values-section">
 			<values icon="icon-shield-check" :text="values.first" />
 			<values icon="icon-sliders-h" :text="values.second" />
 			<values icon="icon-code" :text="values.third" />
@@ -81,8 +81,7 @@ export default {
 			border-bottom-right-radius: 50px;
 			@media screen and (min-width: 576px) {
 				height: calc(75vh - 70px);
-				border-bottom-left-radius: 150px;
-				border-bottom-right-radius: 150px;
+				border-radius: 0;
 			}
 		}
 		.text-header {
@@ -119,7 +118,7 @@ export default {
 		@media screen and (min-width: 576px) {
 			display: inline-flex;
 			justify-content: center;
-			padding: 8rem 0;
+			padding: 2rem 0;
 		}
 		.values {
 			@media screen and (min-width: 576px) {
