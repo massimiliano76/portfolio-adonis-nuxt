@@ -23,7 +23,7 @@
 			<values icon="icon-sliders-h" :text="values.second" />
 			<values icon="icon-code" :text="values.third" />
 		</section>
-		<section class="show-section pt-4">
+		<section class="show-section">
 			<div class="container">
 				<h2>Lorem ipsum dolor sit amet.</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae aut error fugit natus esse excepturi, officia vero facilis quasi quisquam animi dicta eaque voluptas, illum nesciunt pariatur veniam neque.</p>
@@ -90,6 +90,18 @@ export default {
 			left: 50%;
 			transform: translate(-50%, -50%);
 			color: white;
+			h1 {
+				text-transform: uppercase;
+				@media screen and (min-width: 576px) {
+					font-size: 4rem;
+				}
+			}
+			p {
+				text-align: center;
+				@media screen and (min-width: 576px) {
+					font-size: 2rem;
+				}
+			}
 		}
 		.icons {
 			position: absolute;
@@ -127,8 +139,9 @@ export default {
 		}
 	}
 	.show-section {
+		padding: 3rem 0 2rem;
 		@media screen and (min-width: 576px) {
-			padding: 5rem 0;
+			padding: 5rem 0 8rem;
 			h2 {
 				font-size: 3rem;
 			}
