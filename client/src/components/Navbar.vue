@@ -7,7 +7,16 @@
 		<b-collapse id="nav-collapse" is-nav>
 			<b-navbar-nav>
 				<b-nav-item>
-					<nuxt-link to="/">Accueil</nuxt-link>
+					<nuxt-link to="/">{{ $t('homeLabel') }}</nuxt-link>
+				</b-nav-item>
+				<b-nav-item>
+					<nuxt-link to="/about-me">{{ $t('meLabel') }}</nuxt-link>
+				</b-nav-item>
+				<b-nav-item>
+					<nuxt-link to="/achievements">{{ $t('achievementLabel') }}</nuxt-link>
+				</b-nav-item>
+				<b-nav-item>
+					<nuxt-link to="/">{{ $t('contactLabel') }}</nuxt-link>
 				</b-nav-item>
 			</b-navbar-nav>
 
@@ -29,15 +38,6 @@
 <script>
 export default {
 	name: 'Navbar',
-	data() {
-		return {
-			form: {
-				email: '',
-				password: '',
-				remember_me: false,
-			},
-		}
-	},
 	methods: {
 		toggleModal: function () {
 			this.$refs['login-modal'].show()
@@ -45,19 +45,6 @@ export default {
 		handleLogout: async function () {
 			await this.$auth.logout()
 			await this.$router.push('/')
-		},
-		handleLogin: async function () {
-			try {
-				await this.$auth.loginWith('local', {
-					data: {
-						email: this.form.email,
-						password: this.form.password,
-						remember_me: this.form.remember_me,
-					},
-				})
-			} catch (error) {
-				console.log(error)
-			}
 		},
 	},
 	computed: {
@@ -78,6 +65,12 @@ export default {
 .navbar {
 	height: 70px;
 	background-color: white;
+	.navbar-collapse {
+		margin-left: 50px;
+		a {
+			font-weight: 500;
+		}
+	}
 	@media screen and (min-width: 576px) {
 		padding: 0 10%;
 	}
