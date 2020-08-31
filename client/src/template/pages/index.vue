@@ -35,6 +35,18 @@
 		<section class="pt-4">
 			<funny-information></funny-information>
 		</section>
+		<div class="container py-5">
+			<h2 class="my-5">{{ $t('myAchievements') }}</h2>
+		</div>
+		<section class="achievement-container">
+			<achievement-item v-for="(item, key) in 6" :key="key" width="30%" />
+		</section>
+		<div class="achievement-container py-5 px-5">
+			<nuxt-link to="/achievements" class="d-inline-flex">
+				<i class="icon-search align-self-center mr-3" style="font-size: 50px"></i>
+				<div class="align-self-center" style="font-size: 30px">Voir les autres réalisations</div>
+			</nuxt-link>
+		</div>
 	</div>
 </template>
 
@@ -43,6 +55,7 @@ import iconRoundedVue from '../../components/icon-rounded.vue'
 import ValuesSectionVue from '../../components/ValuesSection.vue'
 import OffersVue from '../../components/Offers.vue'
 import FunyInformationVue from '../../components/FunyInformation.vue'
+import AchievementsItemVue from '../../components/AchievementsItem.vue'
 
 export default {
 	layout: 'master',
@@ -51,6 +64,7 @@ export default {
 		values: ValuesSectionVue,
 		offers: OffersVue,
 		'funny-information': FunyInformationVue,
+		'achievement-item': AchievementsItemVue,
 	},
 	data() {
 		return {
@@ -147,6 +161,20 @@ export default {
 			}
 			p {
 				font-size: 1.5rem;
+			}
+		}
+	}
+	.achievement-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		a {
+			color: #1e202a;
+			opacity: 0.5;
+			transition: 0.3s all ease-in-out;
+			&:hover {
+				text-decoration: none;
+				opacity: 1;
 			}
 		}
 	}

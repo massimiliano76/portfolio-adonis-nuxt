@@ -3,7 +3,6 @@
 		<div class="banner pt-3 text-center">
 			<div class="text-header">
 				<h1>Connexion</h1>
-				<p>Développeur web freelance</p>
 			</div>
 		</div>
 		<div class="container">

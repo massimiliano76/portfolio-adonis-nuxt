@@ -59,6 +59,11 @@ export default class TranslationSeeder extends BaseSeeder {
 				translationCode: 'configLabel',
 				fr: 'Config',
 				en: 'Config'
+			},
+			{
+				translationCode: 'myAchievements',
+				fr: 'Mes réalisations',
+				en: 'My achievements'
 			}
 		])
 
